@@ -1,0 +1,193 @@
+html,body {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.hero.is-success {
+  background-color: rgb(26, 26, 26);
+
+}
+
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input {
+  margin-top: 3px;
+  font-weight: 300;
+}
+p {
+  font-weight: 700;
+}
+
+.alone{
+  border-radius: 10px;
+  padding: 20px 35px 35px 35px;
+  background-color: rgba(72, 68, 75, 0.671);
+}
+
+.field{
+  margin-top: 20px;
+}
+
+form{
+  overflow: hidden;
+}
+
+div .input-block{
+  animation: move 500ms;
+  
+}
+
+div .input-bloc{
+  animation: move 500ms;
+  animation-delay: 550ms;
+  animation-fill-mode: backwards;
+}
+
+div .btn-login{
+  animation: move 500ms;
+  animation-delay: 1050ms;
+  animation-fill-mode: backwards;
+}
+
+div .notification{
+  animation: moveAccount 500ms;
+  animation-delay: 400ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveAccount{
+  from{
+    opacity: 0;
+    transform: translateX(35%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move{
+  from{
+    opacity: 0;
+    transform: translateX(-35%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.form-hide{
+  animation: down 1.2s;
+  /*animation-timing-function: ease-out;*/
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  /*animation-timing-function: steps(20);*/
+}
+
+@keyframes down{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+form.validate-error{
+  animation: nono 200ms linear, fade paused;
+  animation-iteration-count: 2;
+  /*animation-iteration-count: infinite;*/
+}
+
+@keyframes nono{
+  0%,100%{
+    transform: translateX(0);
+  }
+  35%{
+    transform: translateX(-15%);
+  }
+  70%{
+    transform: translateX(15%);
+  }
+}
+
+/*@keyframes nono{
+  0%{
+    transform: translateX(0);
+  }
+  35%{
+    transform: translateX(-15%);
+  }
+  70%{
+    transform: translateX(15%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}*/
+
+/* squares */
+body{
+  overflow: hidden;
+}
+
+.squares li{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(106,90,205, 0.15);
+  border-radius: 200px;
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  z-index: -5;
+  animation: up 1s infinite alternate;
+  margin-bottom: -300px;
+  /*animation-direction: reverse;*/
+  /*animation-direction: alternate;*/
+}
+
+@keyframes up{
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  } 
+  50%{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    transform: translateY(-800px) rotate(960deg);
+  }
+}
+
+.fonteuser{
+  font-size: 15px;
+  color: rgb(218, 186, 246);
+  font: Arial;
+}
+
+.fontepass{
+  font-size: 15px;
+  color: rgb(218, 186, 246);
+  font: Arial;
+}
+
+.registro{
+  font-size: 15px;
+  color: rgb(218, 186, 246);
+  font: Arial;
+}
